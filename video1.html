@@ -14,8 +14,8 @@
   var player;
   player = new YT.Player('muteYouTubeVideoPlayer', {
     videoId: 'fdj3BrVB-Eo', // YouTube Video ID
-    width: 560,               // Player width (in px)
-    height: 316,              // Player height (in px)
+    width: 1280,               // Player width (in px)
+    height: 720,              // Player height (in px)
     playerVars: {
       autoplay: 1,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
@@ -25,7 +25,8 @@
       fs: 1,              // Hide the full screen button
       cc_load_policy: 0, // Hide closed captions
       iv_load_policy: 3,  // Hide the Video Annotations
-      autohide: 0         // Hide video controls when playing
+      autohide: 0,        // Hide video controls when playing
+        rel: 0
     },
     events: {
       onReady: function(e) {
